@@ -6,7 +6,7 @@ Pour la partie GPIO, la gestion d'une Led, d'un bouton et d'une interruption via
 ## Led et bouton
 Utilisation des méthodes "for" et "while", ainsi que un bouton poussoir, pour le contrôle d'une LED. <br> 
 **Appuie bouton poussoir** : Led clignote 10x.<br>
-Code : [Led_BP_bouclefor](https://github.com/hepl-leclercq/smartcities/blob/c70cbfda8d6b6343672f47abd695980f2c56ecf3/GPIO/Led_BP_bouclefor)
+Code : [Led_BP_bouclefor]
 
 ## Interruption
 Utilisation de l'interruption sur le bouton poussoir pour gérer le temps de clignotement d'une Led : <br> 
