@@ -5,12 +5,12 @@ Le module "machine" de Raspberry Pi Pico est une bibliothèque Python qui fourni
 Pour la partie GPIO, la gestion d'une Led, d'un bouton et d'une interruption via un bouton sont requises.
 ## Led et bouton
 Utilisation des méthodes "for" et "while", ainsi que un bouton poussoir, pour le contrôle d'une LED. <br> 
-**Appuie bouton poussoir** : Led clignote 10x.
+**Appuie bouton poussoir** : Led clignote 10x.<br>
 Code : 
 
 ## Interruption
 Utilisation de l'interruption sur le bouton poussoir pour gérer le temps de clignotement d'une Led : <br> 
 **Pas d'appuie** : Led allumée. <br>
 **Appuie x fois** : Led clignotte à intervalle (1/x) secondes.<br>
-**x = 15** : Reset le programme
+**x = 15** : Reset le programme<br>
 Code : 
