@@ -1,6 +1,6 @@
 # Smartcities
 
-Pour les différents projets suivants, le contrôleur utilisé est le Raspberry Pi Pico W. Le MicroPython sera le code pour le programmer.
+Pour les différents projets suivants, le contrôleur utilisé est le Raspberry Pi Pico W. Le MicroPython sera le code pour le programmer, depuis l'environnement Thonny.
 
 ## Le Raspberry Pi Pico W
 Le Raspberry Pico W est un microcontrôlleur bon marché qui est caractérisé par de bonne performance, et plusieurs interfaces de communications. Voici ses caractéristiques principales :
@@ -25,3 +25,6 @@ Voici à quoi ressemble ce shield, avec les éléments qui le composent :
 ## MicroPython
 
 MicroPython est une implémentation du langage de programmation Python destiné à être exécuté sur des microcontrôleurs et des systèmes embarqués. Il offre une interface simplifiée pour interagir avec les périphériques matériels tels que les capteurs, les moteurs, les afficheurs et les connectivités sans fil. MicroPython permet ainsi de développer des projets IoT de manière efficace et rapide.
+
+## Thonny
+Thonny est un environnement de développement intégré (IDE) pour Python qui fournit une interface utilisateur simplifiée pour faciliter la programmation en Python. Il offre des fonctionnalités telles que l'autocomplétion, la détection d'erreurs de syntaxe, la gestion de fichiers, l'affichage des variables en temps réel et la possibilité d'exécuter le code en temps réel.
