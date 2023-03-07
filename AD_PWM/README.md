@@ -8,6 +8,6 @@ Utilisation de l'objet ADC pour la lecture de la valeur d'un potentiomètre, et 
 Code : [Pot_angle](https://github.com/hepl-leclercq/smartcities/blob/52242becf5d6158fb5e8ecf648cea9acf3f825bd/AD_PWM/Pot_angle.py)
 
 ## Signal PWM en fonction de la valeur du potentiomètre
-  Utilisation de l'objet ADC et PWM du module machine pour lire la valeur d'un potentiomètre, et generer un signal PWM de même valeur, pour dimmer l'allumage d'une LED.
-
+  Utilisation de l'objet ADC et PWM du module machine pour lire la valeur d'un potentiomètre, et generer un signal PWM de même valeur, pour dimmer l'allumage d'une LED.<BR>
+Code : [Pot_LED](https://github.com/hepl-leclercq/smartcities/blob/fae5f5ee30da61839b5e29f9089763c6f4e1b1fb/AD_PWM/Pot_LED.py)
 ## Création d'une musique
