@@ -7,4 +7,7 @@ Pour la partie PWM, la lecture d'un potentiomètre et l'utilisation d'un signal 
 Utilisation de l'objet ADC pour la lecture de la valeur d'un potentiomètre, et conversion de cette valeur en un angle compris entre 30 et 330 degrés. <BR>
 Code : [Pot_angle](https://github.com/hepl-leclercq/smartcities/blob/52242becf5d6158fb5e8ecf648cea9acf3f825bd/AD_PWM/Pot_angle.py)
 
+## Signal PWM en fonction de la valeur du potentiomètre
+  Utilisation de l'objet ADC et PWM du module machine pour lire la valeur d'un potentiomètre, et generer un signal PWM de même valeur, pour dimmer l'allumage d'une LED.
+
 ## Création d'une musique
