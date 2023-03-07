@@ -5,6 +5,6 @@ Le module "machine" de Raspberry Pi Pico est une bibliothèque Python qui fourni
 Pour la partie PWM, la lecture d'un potentiomètre et l'utilisation d'un signal PWM pour la génération d'une musique sont présentés.
 ## Lecture du potentiomètre
 Utilisation de l'objet ADC pour la lecture de la valeur d'un potentiomètre, et conversion de cette valeur en un angle compris entre 30 et 330 degrés. <BR>
-Code : [Pot_angle]()
+Code : [Pot_angle](https://github.com/hepl-leclercq/smartcities/blob/52242becf5d6158fb5e8ecf648cea9acf3f825bd/AD_PWM/Pot_angle.py)
 
 ## Création d'une musique
