@@ -10,6 +10,9 @@ Code : [Pot_angle](https://github.com/hepl-leclercq/smartcities/blob/52242becf5d
 ## Signal PWM en fonction de la valeur du potentiomètre
   Utilisation de l'objet ADC et PWM du module machine pour lire la valeur d'un potentiomètre, et generer un signal PWM de même valeur, pour dimmer l'allumage d'une LED.<BR>
 Code : [Pot_LED](https://github.com/hepl-leclercq/smartcities/blob/fae5f5ee30da61839b5e29f9089763c6f4e1b1fb/AD_PWM/Pot_LED.py)
+## Dimming d'une Led de façon linéaire et quadratique
+  
+  [Lin&Quad_dimmingLed](https://github.com/hepl-leclercq/smartcities/blob/0a0aa7913e14d9f004b816ff375e80577415b072/AD_PWM/Lin&Quad_dimmingLed.py)
 ## Création d'une musique
 Utilisation de la PWM sur le Buzzer pour la création d'une musique. La largeur d'impulsion de la PWM agit sur le volume, et la fréquence de la PWM agit sur la fréquence de la note. Le morceau généré est "Final Countdown" de "Europe".<BR>
 Code = [Final_Countdown_Buzzer](https://github.com/hepl-leclercq/smartcities/blob/4b91a1f2deeb30321c6f24695a13a5e49e7f2d20/AD_PWM/Final_Countdown_Buzzer.py)
