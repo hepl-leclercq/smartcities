@@ -17,5 +17,16 @@ Code : [Led_BP_Interrupt](https://github.com/hepl-leclercq/smartcities/blob/0b57
 
 ## Les différentes fonctions
 #### Fonction `value()`
-
+La fonction value() peut être utilisée avec deux modes de fonctionnement différents : le mode lecture et le mode écriture.<BR> **En mode lecture**, `value()` est utilisée pour lire la valeur actuelle du pin d'E/S. Cette fonction renvoie un booléen de valeur 1 lorsque l'entrée est à l'état logique haut, et un booléen de valeur 0 lorsque l'entrée est à l'état logique bas. <BR> **En mode écriture**, `value()` est utilisée pour écrire une nouvelle valeur sur le pin d'E/S, tel que `sortie.value(1)` met la sortie à l'état logique 1, et `sortie.value(0)` met la sortie à l'état logique 0.
+ 
 #### Fonction `IRQ()`
+La fonction `IRQ()` est utilisée pour activer ou désactiver l'interruption d'événement sur une broche GPIO spécifique. <BR>
+Cette fonction prend un ou plusieurs arguments pour configurer l'interruption, qui sont les suivants :
+
+- `trigger`: le type de déclencheur d'interruption à utiliser, qui peut être l'un des suivants :
+  - `Pin.IRQ_RISING`: déclenche l'interruption lorsqu'il y a une transition de bas à haut de la broche.
+  - `Pin.IRQ_FALLING`: déclenche l'interruption lorsqu'il y a une transition de haut à bas de la broche.
+  - `Pin.IRQ_RISING_FALLING`: déclenche l'interruption lorsqu'il y a une transition de bas à haut ou de haut à bas de la broche.
+- `handler`: la fonction à appeler lorsque l'interruption est déclenchée.
+- `debounce`: le temps de rebond (en millisecondes) à appliquer à la broche pour éviter les rebonds de signal. La valeur par défaut est 0, ce qui signifie qu'aucun temps de rebond n'est appliqué.
+  
