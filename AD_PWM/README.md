@@ -1,10 +1,10 @@
 # AD - PWM
 ## Introduction
 Dans le cadre du cours de Smartcities, il nous est demandé de réaliser plusieurs applications autour du Raspberry Pi Pico W, en utilisant le shield Grove founit avec.
-Le module "machine" de Raspberry Pi Pico est une bibliothèque Python qui fournit une interface pour accéder aux fonctionnalités matérielles de la carte, telles que les GPIO, les interfaces SPI, I2C, UART, ADC, DAC, PWM, entre autres. Il permet de contrôler et d'interagir avec ces périphériques en utilisant des instructions Python simples, facilitant ainsi la programmation de projets embarqués. La classe `ADC` (Analog-to-Digital Converter) du module machine est une classe qui permet d'effectuer des conversions analogiques-numériques sur les broches d'entrée analogiques de la carte.
+Le module "machine" de Raspberry Pi Pico est une bibliothèque Python qui fournit une interface pour accéder aux fonctionnalités matérielles de la carte, telles que les GPIO, les interfaces SPI, I2C, UART, ADC, DAC, PWM, entre autres. Il permet de contrôler et d'interagir avec ces périphériques en utilisant des instructions Python simples, facilitant ainsi la programmation de projets embarqués. La classe `ADC` (Analog-to-Digital Converter) présente dans le module machine, est une classe qui permet d'effectuer des conversions analogiques-numériques sur les broches d'entrée analogiques de la carte.
 Pour la partie PWM, la lecture d'un potentiomètre, l'utilisation d'un signal PWM pour le dimming linéaire et quadratique, et la génération d'une musique sont présentés.
 ## Lecture du potentiomètre
-Utilisation de l'objet ADC pour la lecture de la valeur d'un potentiomètre, et conversion de cette valeur en un angle compris entre 30 et 330 degrés. <BR>
+La fonction `read()` de la classe `ADC` est utilsée pour réaliser la conversion du signal analogique provenant du potentiomètre, en une valeur binaire 12 bits, donc comprise entre 0 et 65535. Ensuite, conversion de cette valeur en un angle compris entre 30 et 330 degrés.   <BR>
 Code : [Pot_angle](https://github.com/hepl-leclercq/smartcities/blob/52242becf5d6158fb5e8ecf648cea9acf3f825bd/AD_PWM/Pot_angle.py)
 
 ## Signal PWM en fonction de la valeur du potentiomètre
