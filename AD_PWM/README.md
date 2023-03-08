@@ -8,11 +8,13 @@ La fonction `read()` de la classe `ADC` est utilsée pour réaliser la conversio
 Code : [Pot_angle](https://github.com/hepl-leclercq/smartcities/blob/52242becf5d6158fb5e8ecf648cea9acf3f825bd/AD_PWM/Pot_angle.py)
 
 ## Signal PWM en fonction de la valeur du potentiomètre
-La fonction `read()` de la classe `ADC` est utilsée pour réaliser la conversion du signal analogique provenant du potentiomètre, en une valeur binaire 12 bits, donc comprise entre 0 et 65535. Un signal PWM de même valeur est alors généré pour gerer l'intensité de la ledCette même valeur est alors envoyé et generer un signal PWM de même valeur, pour dimmer l'allumage d'une LED.<BR>
+La fonction `read()` de la classe `ADC` est utilsée pour réaliser la conversion du signal analogique provenant du potentiomètre, en une valeur binaire 12 bits, donc comprise entre 0 et 65535. La fonction `duty()` de la classe `ADC` permet ensuite de générer un signal PWM dont le rapport cyclique est définit par la valeur accquise par la fonction `read()` précédente. Ce signal PWM permet de dimmer l'intensité lumineuse de la LED. <BR>
 Code : [Pot_LED](https://github.com/hepl-leclercq/smartcities/blob/fae5f5ee30da61839b5e29f9089763c6f4e1b1fb/AD_PWM/Pot_LED.py)
 ## Dimming d'une Led de façon linéaire et quadratique
-  Utilisation de la PWM sur la Led pour varier sa luminosité de façon linéaire et de façon quadratique. 
+  Utilisation de la fonction `duty()` pour définir le rapport cyclique de la PWM. Cette PWM dimme l'intensité lumineuse de la LED. Ce programme contient 2 méthodes pour la variation de luminosité : la méthode linéaire et la méthode quadratique.
 Code : [Lin&Quad_dimmingLed](https://github.com/hepl-leclercq/smartcities/blob/0a0aa7913e14d9f004b816ff375e80577415b072/AD_PWM/Lin&Quad_dimmingLed.py)
 ## Création d'une musique
-Utilisation de la PWM sur le Buzzer pour la création d'une musique. La largeur d'impulsion de la PWM agit sur le volume, et la fréquence de la PWM agit sur la fréquence de la note. Le morceau généré est "Final Countdown" de "Europe".<BR>
+Utilisation de la PWM sur le Buzzer pour la création d'une musique. La largeur d'impulsion de la PWM agit sur le volume et est définit par la fonction `duty()`. La fréquence de la PWM agit sur la fréquence de la note et est définit par la fonction `freq()`. Le morceau généré est "Final Countdown" de "Europe".<BR>
 Code = [Final_Countdown_Buzzer](https://github.com/hepl-leclercq/smartcities/blob/4b91a1f2deeb30321c6f24695a13a5e49e7f2d20/AD_PWM/Final_Countdown_Buzzer.py)
+
+  
