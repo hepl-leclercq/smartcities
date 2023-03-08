@@ -8,7 +8,7 @@ La fonction `read()` de la classe `ADC` est utilsée pour réaliser la conversio
 Code : [Pot_angle](https://github.com/hepl-leclercq/smartcities/blob/52242becf5d6158fb5e8ecf648cea9acf3f825bd/AD_PWM/Pot_angle.py)
 
 ## Signal PWM en fonction de la valeur du potentiomètre
-  Utilisation de l'objet ADC et PWM du module machine pour lire la valeur d'un potentiomètre, et generer un signal PWM de même valeur, pour dimmer l'allumage d'une LED.<BR>
+La fonction `read()` de la classe `ADC` est utilsée pour réaliser la conversion du signal analogique provenant du potentiomètre, en une valeur binaire 12 bits, donc comprise entre 0 et 65535. Un signal PWM de même valeur est alors généré pour gerer l'intensité de la ledCette même valeur est alors envoyé et generer un signal PWM de même valeur, pour dimmer l'allumage d'une LED.<BR>
 Code : [Pot_LED](https://github.com/hepl-leclercq/smartcities/blob/fae5f5ee30da61839b5e29f9089763c6f4e1b1fb/AD_PWM/Pot_LED.py)
 ## Dimming d'une Led de façon linéaire et quadratique
   Utilisation de la PWM sur la Led pour varier sa luminosité de façon linéaire et de façon quadratique. 
