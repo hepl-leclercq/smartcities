@@ -23,8 +23,8 @@ La modulation de largeur d'impulsion (PWM) est une technique couramment utilisé
 #### `read_u16()` :   
 la fonction `read_16()` de la classe `ADC` retourne une valeur entière comprise entre 0 et 65535, qui représente la tension mesurée par l'ADC. Cette valeur est proportionnelle à la tension appliquée à l'entrée analogique de l'ADC.  
   
-####`freq()`
+#### `freq()`
 La fonction `freq()` de la classe `PWM` permet de définir la fréquence de la PWM, ce qui permet de régler la vitesse et la précision du contrôle de la puissance fournie à des composants électroniques en fonction des besoins de l'application.
 
-####`duty_u16`
+#### `duty_u16`
 La fonction `duty()` de la classe `PWM` permet de contrôler le rapport cyclique de la PWM, c'est-à-dire la durée de l'impulsion envoyée aux composants électroniques, ce qui permet de contrôler la vitesse, l'intensité ou le volume en fonction des besoins de l'application. L'avantage de cette fonction est qu'elle prend comme argument un valeur entière de 16 bits, plutôt qu'une valeur décimale.
