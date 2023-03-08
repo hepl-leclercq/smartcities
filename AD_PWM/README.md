@@ -18,8 +18,9 @@ Utilisation de la PWM sur le Buzzer pour la création d'une musique. La largeur 
 Code = [Final_Countdown_Buzzer](https://github.com/hepl-leclercq/smartcities/blob/4b91a1f2deeb30321c6f24695a13a5e49e7f2d20/AD_PWM/Final_Countdown_Buzzer.py)
 ## Pulse Width Modulation
 La modulation de largeur d'impulsion (PWM) est une technique couramment utilisée pour contrôler la puissance fournie à des composants électroniques tels que des moteurs, des LED ou des haut-parleurs. Elle consiste à créer des signaux électriques périodiques dont la durée d'impulsion varie, permettant ainsi de contrôler la moyenne de la tension ou du courant fourni à ces composants. En ajustant le rapport cyclique (la durée de l'impulsion par rapport à la période totale du signal), on peut varier la quantité d'énergie transférée à ces composants, permettant ainsi de les faire fonctionner à différentes vitesses ou intensités.
-##Fonctions utilisées
-####`read_u16()` :   
+  
+## Fonctions utilisées
+#### `read_u16()` :   
 la fonction `read_16()` de la classe `ADC` retourne une valeur entière comprise entre 0 et 65535, qui représente la tension mesurée par l'ADC. Cette valeur est proportionnelle à la tension appliquée à l'entrée analogique de l'ADC.  
   
 ####`freq()`
