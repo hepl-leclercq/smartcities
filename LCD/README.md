@@ -5,7 +5,7 @@ Le module `machine` de Raspberry Pi Pico est une bibliothèque Python qui fourni
 Pour la partie LCD, l'affichage d'un message, l'affichage de la valeur d'un potentiomètre, et l'affichage de la température et de l'humidité sont présentés.
 ## Affichage d'un message
 
-Code : [Led_BP_bouclefor]()
+Code : [LCD_helloWorld](https://github.com/hepl-leclercq/smartcities/blob/8db6a8eeb2eee78df4381d38e745222d14f9b319/LCD/LCD_HelloWorld.py)
 
 ## Affichage valeur d'un potentiomètre
 
