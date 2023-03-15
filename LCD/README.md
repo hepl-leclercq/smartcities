@@ -18,6 +18,29 @@ Code : [Led_BP_Interrupt](https://github.com/hepl-leclercq/smartcities/blob/0b57
 
 
 ## La librairie LCD1602
+La librairie LCD1602 est une bibliothèque de fonctions pour le Raspberry Pi Pico W qui permet de contrôler un écran LCD de type 1602. Cet écran LCD est doté de deux lignes de 16 caractères chacune.
+
+Les fonctions de la librairie LCD1602 comprennent :
+
+#### lcd_init() : Cette fonction initialise l'écran LCD en configurant les broches GPIO nécessaires. Cette fonction doit être appelée avant d'utiliser d'autres fonctions de la bibliothèque.
+
+#### lcd_clear() : Cette fonction efface tout le contenu de l'écran.
+
+#### lcd_display_string() : Cette fonction affiche une chaîne de caractères sur l'écran. Elle prend en entrée deux arguments : la chaîne de caractères à afficher et la position de départ sur l'écran.
+
+#### lcd_display_char() : Cette fonction affiche un seul caractère à la position spécifiée sur l'écran.
+
+#### lcd_set_cursor() : Cette fonction permet de définir la position du curseur sur l'écran.
+
+#### lcd_scroll_left() : Cette fonction fait défiler le contenu de l'écran vers la gauche.
+
+#### lcd_scroll_right() : Cette fonction fait défiler le contenu de l'écran vers la droite.
+
+#### lcd_create_char() : Cette fonction permet de créer un caractère personnalisé à afficher sur l'écran. Elle prend en entrée un tableau de 8 octets représentant le motif du caractère.
+
+#### lcd_blink() : Cette fonction permet de faire clignoter le curseur à la position actuelle.
+
+#### lcd_no_blink() : Cette fonction arrête le clignotement du curseur.
  
 ## Les différentes fonctions
 #### Fonction ``
