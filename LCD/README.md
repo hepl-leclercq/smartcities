@@ -9,7 +9,7 @@ Code : [LCD_helloWorld](https://github.com/hepl-leclercq/smartcities/blob/8db6a8
 
 ## Affichage valeur d'un potentiomètre
 Utilisation de la fonction `read_u16()` de la classe ADC  pour réaliser la conversion du signal analogique provenant du potentiomètre, en une valeur binaire 12 bits, donc comprise entre 0 et 65535. Ensuite, affichage de cette valeur sur l'écran LCD, avec la fonction `print()`.<br>
-Code : [LCD_potval]()
+Code : [LCD_potval](https://github.com/hepl-leclercq/smartcities/blob/a9b008b12753e93c37d20290306a38a49b14f791/LCD/LCD_potval.py)
 
  
 ## Affichage de la température et de l'humidité
@@ -23,7 +23,7 @@ La librairie LCD1602 est une bibliothèque de fonctions pour le Raspberry Pi Pic
 Les fonctions de la librairie LCD1602 comprennent :
 
 #### lcd_init() 
- Cette fonction initialise l'écran LCD en configurant les broches GPIO nécessaires. Cette fonction doit être appelée avant d'utiliser d'autres fonctions de la bibliothèque.
+Cette fonction initialise l'écran LCD en configurant les broches GPIO nécessaires. Cette fonction doit être appelée avant d'utiliser d'autres fonctions de la bibliothèque.
 
 #### lcd_clear() 
 Cette fonction efface tout le contenu de l'écran.
