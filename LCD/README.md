@@ -28,20 +28,20 @@ Les fonctions de la librairie LCD1602 comprennent :
 #### lcd_clear() 
 Cette fonction efface tout le contenu de l'écran.
 
-#### lcd_display_string() 
-Cette fonction affiche une chaîne de caractères sur l'écran. Elle prend en entrée deux arguments : la chaîne de caractères à afficher et la position de départ sur l'écran.
+#### lcd_setCursor(x, y)
+Cette fonction déplace le curseur à la position (x,y), où x et y sont des entiers compris entre 0 et 15 pour les écrans LCD de 16x2.
 
-#### lcd_display_char()
-Cette fonction affiche un seul caractère à la position spécifiée sur l'écran.
+#### lcd_no_display() 
+Cette fonction éteint l'affichage.
 
-#### lcd_set_cursor()
-Cette fonction permet de définir la position du curseur sur l'écran.
+#### lcd_display() 
+Cette fonction allume l'affichage.
 
-#### lcd_scroll_left()
-Cette fonction fait défiler le contenu de l'écran vers la gauche.
+#### lcd_no_cursor() 
+Cette fonction masque le curseur.
 
-#### lcd_scroll_right()
-Cette fonction fait défiler le contenu de l'écran vers la droite.
+#### lcd_cursor()
+Cette fonction affiche le curseur sous forme de trait clignotant.
 
 #### lcd_create_char()
 Cette fonction permet de créer un caractère personnalisé à afficher sur l'écran. Elle prend en entrée un tableau de 8 octets représentant le motif du caractère.
@@ -51,6 +51,15 @@ Cette fonction permet de faire clignoter le curseur à la position actuelle.
 
 #### lcd_no_blink()
 Cette fonction arrête le clignotement du curseur.
+
+### lcd_autoscroll()
+Cette fonction fait défiler automatiquement le texte vers la gauche lorsque le curseur atteint le bord droit de l'écran
+
+### lcd_no_autoscroll()
+Cette fonction désactive le défilement automatique.
+
+### print(value)
+Cette fonction affiche une chaîne de caractères sur l'écran LCD à la position actuelle du curseur.
  
 ## Les différentes fonctions
 #### Fonction ``
