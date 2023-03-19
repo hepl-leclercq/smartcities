@@ -13,8 +13,8 @@ Code : [LCD_potval](https://github.com/hepl-leclercq/smartcities/blob/a9b008b127
 
  
 ## Affichage de la température
-
-Code : [Led_BP_Interrupt](https://github.com/hepl-leclercq/smartcities/blob/0b574c7c24d3611e5b671a340976c71a10b51375/GPIO/Led_BP_Interrupt.py)
+Récuperation chaque seconde de la température via la pin D18 du Raspberry Pi Pico W connectée au capteur de température, et affichage de cette température sur l'écran LCD, en ajoutant le logo `°`.<br>
+Code : [LCD_temp](https://github.com/hepl-leclercq/smartcities/blob/9b523c6d9dde85a7f951ad25c7986eba10be9ad7/LCD/LCD_temp.py)
 
 
 ## La librairie LCD1602
