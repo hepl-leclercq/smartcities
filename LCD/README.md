@@ -52,17 +52,13 @@ Cette fonction permet de faire clignoter le curseur à la position actuelle.
 #### lcd_no_blink()
 Cette fonction arrête le clignotement du curseur.
 
-### lcd_autoscroll()
+#### lcd_autoscroll()
 Cette fonction fait défiler automatiquement le texte vers la gauche lorsque le curseur atteint le bord droit de l'écran
 
-### lcd_no_autoscroll()
+#### lcd_no_autoscroll()
 Cette fonction désactive le défilement automatique.
 
-### print(value)
+#### print(value)
 Cette fonction affiche une chaîne de caractères sur l'écran LCD à la position actuelle du curseur.
- 
-## Les différentes fonctions
-#### Fonction ``
- 
-#### Fonction ``
+
  
