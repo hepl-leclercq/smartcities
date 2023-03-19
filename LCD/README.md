@@ -12,7 +12,7 @@ Utilisation de la fonction `read_u16()` de la classe ADC  pour réaliser la conv
 Code : [LCD_potval](https://github.com/hepl-leclercq/smartcities/blob/a9b008b12753e93c37d20290306a38a49b14f791/LCD/LCD_potval.py)
 
  
-## Affichage de la température et de l'humidité
+## Affichage de la température
 
 Code : [Led_BP_Interrupt](https://github.com/hepl-leclercq/smartcities/blob/0b574c7c24d3611e5b671a340976c71a10b51375/GPIO/Led_BP_Interrupt.py)
 
