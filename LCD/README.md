@@ -8,8 +8,7 @@ Utilisation de la fonction `setCursor()` et `print()` pour afficher un message s
 Code : [LCD_helloWorld](https://github.com/hepl-leclercq/smartcities/blob/8db6a8eeb2eee78df4381d38e745222d14f9b319/LCD/LCD_HelloWorld.py)
 
 ## Affichage valeur d'un potentiomètre
-Utilisation de la fonction `read_u16()` de la classe ADC  pour réaliser la conversion du signal analogique provenant du potentiomètre, en une valeur binaire 12 bits, donc comprise entre 0 et 65535. Ensuite, affichage de cette valeur sur l'écran LCD, avec la fonction `print()`.
-Code : Pot_angle
+Utilisation de la fonction `read_u16()` de la classe ADC  pour réaliser la conversion du signal analogique provenant du potentiomètre, en une valeur binaire 12 bits, donc comprise entre 0 et 65535. Ensuite, affichage de cette valeur sur l'écran LCD, avec la fonction `print()`.<br>
 Code : [LCD_potval]()
 
  
