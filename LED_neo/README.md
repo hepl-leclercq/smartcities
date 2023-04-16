@@ -9,7 +9,7 @@ Code : [LedColor](https://github.com/hepl-leclercq/smartcities/blob/171dfe7ae4de
 Le module `ws2812` est une bibliothèque en MicroPython pour contrôler des bandes de LEDs RGB de type Neopixel. Il s'agit d'un module très pratique pour créer des effets lumineux.
 
 
-Les fonctions principales du module neopixel sont les suivantes :
+Les fonctions principales du module ws2812 sont les suivantes :
 
 `pixels_show():` : cette méthode envoie les données des pixels à la bande de LED. Elle doit être appelée chaque fois que les couleurs des pixels ont été modifiées.
 
