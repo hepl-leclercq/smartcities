@@ -2,7 +2,7 @@
 
 ## Différentes couleurs sur la LED néopixel
 Utilisation des fonction `pixels_fill()` et `pixels_show()` pour allumer une led en différentes couleurs. <BR>
-Code : [LedColor] (https://github.com/hepl-leclercq/smartcities/blob/171dfe7ae4de1d1d756b8420d6eb51be53f82a9f/LED_neo/LedColor.py)
+Code : [LedColor](https://github.com/hepl-leclercq/smartcities/blob/171dfe7ae4de1d1d756b8420d6eb51be53f82a9f/LED_neo/LedColor.py)
 
 ## Le module `ws2812`
 
