@@ -17,7 +17,12 @@ Code : [Microphone](https://github.com/hepl-leclercq/smartcities/blob/d682f84a1e
 
 ## Affichage valeur de luminosité entre 0 et 65535
 Utilisation de la fonction `read_u16()` de la classe ADC pour réaliser la conversion du signal analogique provenant du capteur de luminosité, en une valeur binaire 12 bits, donc comprise entre 0 et 65535. Ensuite, affichage de cette valeur dans le moniteur série.
-Code : [Luminosité]https://github.com/hepl-leclercq/smartcities/blob/e0ef1af58e0330a146b9543ac2ed2f8200d50196/Sensor/Luminosite.py)
+Code : [Luminosité](https://github.com/hepl-leclercq/smartcities/blob/e0ef1af58e0330a146b9543ac2ed2f8200d50196/Sensor/Luminosite.py)
+
+## Affichage d'un message lorsque un obstacle est détecté
+Utilisation des fonctions du GPIO pour détecter un osctacle, et affichage d'un message dans le moniteur série.
+Code : [PIR](https://github.com/hepl-leclercq/smartcities/blob/0a1bee5396817405c3152025b54c753057f48a88/Sensor/PIR.py)
+
 
 
 Le module `dht` en Micropython est une bibliothèque qui permet de lire les données de température et d'humidité à partir du capteur DHT11 ou DHT22. Voici quelques-unes de ses fonctions principales :
