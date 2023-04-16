@@ -2,7 +2,7 @@
 import machine
 
 # Crée une instance du port ADC en utilisant l'entrée ADC 1
-luminosite_adc = machine.ADC(1)
+luminosite_adc = machine.ADC(0)
 
 # Boucle infinie
 while True:
