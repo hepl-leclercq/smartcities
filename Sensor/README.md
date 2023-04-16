@@ -1,5 +1,20 @@
 ## Sensor
-### DHT11
+
+# LCD
+## Introduction
+Dans le cadre du cours de Smartcities, il nous est demandé de réaliser plusieurs applications autour du Raspberry Pi Pico W, en utilisant le shield Grove founit avec.<BR>
+Le module `machine` de Raspberry Pi Pico est une bibliothèque Python qui fournit une interface pour accéder aux fonctionnalités matérielles de la carte, telles que les GPIO, les interfaces SPI, I2C, UART, ADC, DAC, PWM, entre autres. Il permet de contrôler et d'interagir avec ces périphériques en utilisant des instructions Python simples, facilitant ainsi la programmation de projets embarqués. La classe `I2C`, présente dans le module machine, est la classe utilisée pour la gestion de l'écran LCD. <BR> On fournit également au Raspberry Pi Pico W la librairie `DHT11`, elle permet de faciliter l'utilisation du capteur DHT11. Cette librairie est expliquée en bas de page.
+Pour la partie SENSOR, l'affichage de la température et humidité, l'affichage de la valeur d'un microphone et de luminosité entre 0 et 65535, et la détection de mouvement via un capteur PIR sont présentés.  
+## Affichage de temoérature et humidité
+Utilisation de la fonction `setCursor()` et `print()` pour afficher un message sur l'écran LCD.<br>
+Code : [LCD_helloWorld](https://github.com/hepl-leclercq/smartcities/blob/8db6a8eeb2eee78df4381d38e745222d14f9b319/LCD/LCD_HelloWorld.py)
+
+## Affichage valeur d'un potentiomètre
+Utilisation de la fonction `read_u16()` de la classe ADC  pour réaliser la conversion du signal analogique provenant du potentiomètre, en une valeur binaire 12 bits, donc comprise entre 0 et 65535. Ensuite, affichage de cette valeur sur l'écran LCD, avec la fonction `print()`.<br>
+Code : [LCD_potval](https://github.com/hepl-leclercq/smartcities/blob/a9b008b12753e93c37d20290306a38a49b14f791/LCD/LCD_potval.py)
+
+
+## Fonction utilisée et exmplications
 Le capteur DHT11 est un capteur de température et d'humidité relativement simple et peu coûteux. Il utilise un capteur capacitif pour mesurer l'humidité relative et un thermistor pour mesurer la température ambiante. Les données sont généralement transmises sous forme numérique via un seul fil, ce qui le rend facile à intégrer dans des projets électroniques.
 
 
