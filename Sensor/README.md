@@ -15,6 +15,8 @@ Le module `dht` en Micropython est une bibliothèque qui permet de lire les donn
 
 Il convient de noter que la fonction d.measure() peut prendre un certain temps pour effectuer la mesure, et il est recommandé d'attendre au moins 2 secondes entre les mesures successives pour éviter de surcharger le capteur.
 
+Code : (code) <https://github.com/hepl-leclercq/smartcities/blob/25dd11630cc4ba6d2fc0b74e16389c21efe1a084/Sensor/DHT11.py>
+
 ### Microphone
 Le microphone se branche sur une broche GPIO du Raspberry Pi Pico pour fournir une entrée audio analogique.
 
