@@ -11,12 +11,13 @@ Utilisation de la fonction `dht11.measure()`, `dht11.temperature()` et `dht11.hu
 Code : [DHT11](https://github.com/hepl-leclercq/smartcities/blob/25dd11630cc4ba6d2fc0b74e16389c21efe1a084/Sensor/DHT11.py)
 
 ## Affichage valeur d'un microphone entre 0 et 65535
-Utilisation de la fonction `read_u16()` de la classe ADC  pour réaliser la conversion du signal analogique provenant du microphone, en une valeur binaire 12 bits, donc comprise entre 0 et 65535. Ensuite, affichage de cette valeur dans le moniteur série.
-Code : [LCD_potval](https://github.com/hepl-leclercq/smartcities/blob/a9b008b12753e93c37d20290306a38a49b14f791/LCD/LCD_potval.py)
+Utilisation de la fonction `read_u16()` de la classe ADC pour réaliser la conversion du signal analogique provenant du microphone, en une valeur binaire 12 bits, donc comprise entre 0 et 65535. Ensuite, affichage de cette valeur dans le moniteur série.
+Code : [Microphone](https://github.com/hepl-leclercq/smartcities/blob/d682f84a1e919442229988c2709c72d33f14307a/Sensor/Microphone.py)
 
 
-## Fonction utilisée et exmplications
-Le capteur DHT11 est un capteur de température et d'humidité relativement simple et peu coûteux. Il utilise un capteur capacitif pour mesurer l'humidité relative et un thermistor pour mesurer la température ambiante. Les données sont généralement transmises sous forme numérique via un seul fil, ce qui le rend facile à intégrer dans des projets électroniques.
+## Affichage valeur de luminosité entre 0 et 65535
+Utilisation de la fonction `read_u16()` de la classe ADC pour réaliser la conversion du signal analogique provenant du capteur de luminosité, en une valeur binaire 12 bits, donc comprise entre 0 et 65535. Ensuite, affichage de cette valeur dans le moniteur série.
+Code : [Microphone](https://github.com/hepl-leclercq/smartcities/blob/d682f84a1e919442229988c2709c72d33f14307a/Sensor/Microphone.py)
 
 
 Le module `dht` en Micropython est une bibliothèque qui permet de lire les données de température et d'humidité à partir du capteur DHT11 ou DHT22. Voici quelques-unes de ses fonctions principales :
