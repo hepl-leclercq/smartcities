@@ -10,8 +10,8 @@ Pour la partie SENSOR, l'affichage de la température et humidité, l'affichage 
 Utilisation de la fonction `dht11.measure()`, `dht11.temperature()` et `dht11.humidity()` pour afficher la température et l'humidité dans le moniteur série.
 Code : [DHT11](https://github.com/hepl-leclercq/smartcities/blob/25dd11630cc4ba6d2fc0b74e16389c21efe1a084/Sensor/DHT11.py)
 
-## Affichage valeur d'un potentiomètre
-Utilisation de la fonction `read_u16()` de la classe ADC  pour réaliser la conversion du signal analogique provenant du potentiomètre, en une valeur binaire 12 bits, donc comprise entre 0 et 65535. Ensuite, affichage de cette valeur sur l'écran LCD, avec la fonction `print()`.<br>
+## Affichage valeur d'un microphone entre 0 et 65535
+Utilisation de la fonction `read_u16()` de la classe ADC  pour réaliser la conversion du signal analogique provenant du microphone, en une valeur binaire 12 bits, donc comprise entre 0 et 65535. Ensuite, affichage de cette valeur dans le moniteur série.
 Code : [LCD_potval](https://github.com/hepl-leclercq/smartcities/blob/a9b008b12753e93c37d20290306a38a49b14f791/LCD/LCD_potval.py)
 
 
