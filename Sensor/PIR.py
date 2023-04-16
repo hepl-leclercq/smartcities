@@ -2,7 +2,7 @@
 from machine import Pin
 from time import sleep
 
-# Définit les broches de détection de mouvement et de la LED
+# Définit les broches de détection de mouvement
 motion_pin = Pin(20, Pin.IN)
 
 
@@ -11,6 +11,10 @@ while True:
     # Si un mouvement est détecté
     if motion_pin.value():
         # Affiche un message
-        print("obstacle détecté")
+        print ("obstacle détecté")
+        
+        sleep(1)
+        
+     
 
    
