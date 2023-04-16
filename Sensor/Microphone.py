@@ -2,8 +2,8 @@
 import machine
 import time
 
-# Crée une instance du port ADC en utilisant le GPIO 26 (entrée analogique)
-mic = machine.ADC(26)
+# Crée une instance du port ADC
+mic = machine.ADC(1)
 
 # Boucle infinie
 while True:
