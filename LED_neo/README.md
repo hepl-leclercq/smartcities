@@ -1,15 +1,21 @@
-Le module `neopixel` est une bibliothèque en MicroPython pour contrôler des bandes de LEDs RGB de type Neopixel. Il s'agit d'un module très pratique pour créer des effets lumineux.
+# LED_NEO
+
+## Différentes couleurs sur la LED néopixel
+Utilisation des fonction `pixels_fill()` et `pixels_show()` pour allumer une led en différentes couleurs. <BR>
+Code : [LedColor] (https://github.com/hepl-leclercq/smartcities/blob/171dfe7ae4de1d1d756b8420d6eb51be53f82a9f/LED_neo/LedColor.py)
+
+## Le module `ws2812`
+
+Le module `ws2812` est une bibliothèque en MicroPython pour contrôler des bandes de LEDs RGB de type Neopixel. Il s'agit d'un module très pratique pour créer des effets lumineux.
+
 
 Les fonctions principales du module neopixel sont les suivantes :
 
-`neopixel.NeoPixel(pin, n, bpp=3, timing=1)` : cette fonction crée une instance de la classe neopixel.NeoPixel.
+`pixels_show():` : cette méthode envoie les données des pixels à la bande de LED. Elle doit être appelée chaque fois que les couleurs des pixels ont été modifiées.
 
-`NeoPixel.__setitem__(self, index, val)` : cette méthode permet de définir la couleur d'un pixel à l'indice index. 
+`pixels_fill()` : cette méthode remplit tous les pixels de la bande avec la couleur spécifiée par color.
 
-`NeoPixel.write()` : cette méthode envoie les données des pixels à la bande de LED. Elle doit être appelée chaque fois que les couleurs des pixels ont été modifiées.
 
-`NeoPixel.fill(self, color)` : cette méthode remplit tous les pixels de la bande avec la couleur spécifiée par color.
 
-`NeoPixel.clear(self)` : cette méthode éteint tous les pixels de la bande.
 
 
