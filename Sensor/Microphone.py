@@ -3,7 +3,7 @@ import machine
 import time
 
 # Crée une instance du port ADC
-mic = machine.ADC(1)
+mic = machine.ADC(0)
 
 # Boucle infinie
 while True:
