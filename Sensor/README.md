@@ -24,7 +24,7 @@ Les capteurs PIR sont des capteurs utilisés pour détecter les mouvements. Ils 
 Code : [PIR](https://github.com/hepl-leclercq/smartcities/blob/86b89f94d8a6c2390578bca4f81dcb9ef8a69d90/Sensor/PIR.py)
 
 
-
+## Module `dht`
 Le module `dht` en Micropython est une bibliothèque qui permet de lire les données de température et d'humidité à partir du capteur DHT11 ou DHT22. Voici quelques-unes de ses fonctions principales :
 
 `dht.DHT11(pin)` : Crée une instance du capteur DHT11 en utilisant le numéro de broche spécifié. 
