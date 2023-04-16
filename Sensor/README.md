@@ -17,7 +17,7 @@ Code : [Microphone](https://github.com/hepl-leclercq/smartcities/blob/d682f84a1e
 
 ## Affichage valeur de luminosité entre 0 et 65535
 Utilisation de la fonction `read_u16()` de la classe ADC pour réaliser la conversion du signal analogique provenant du capteur de luminosité, en une valeur binaire 12 bits, donc comprise entre 0 et 65535. Ensuite, affichage de cette valeur dans le moniteur série.
-Code : [Luminosité](https://github.com/hepl-leclercq/smartcities/blob/e0ef1af58e0330a146b9543ac2ed2f8200d50196/Sensor/Luminosite.py)
+Code : [Luminosité](https://github.com/hepl-leclercq/smartcities/blob/5edc778117a75159be0c914e9e3cbe44b20f3492/Sensor/Luminosite.py)
 
 ## Affichage d'un message lorsque un obstacle est détecté
 Utilisation des fonctions du GPIO pour détecter un osctacle, et affichage d'un message dans le moniteur série.
