@@ -62,13 +62,13 @@ Le module `urequests` de MicroPython permet de réaliser des requêtes HTTP basi
 `urequests.delete()` : envoie une requête DELETE à l'URL spécifiée et renvoie la réponse sous forme de texte.<BR>
 
 ## Module `ntptime`
-Le module `ntptime` en MicroPython permet de synchroniser l'horloge temps réel d'un microcontrôleur avec l'heure universelle coordonnée (UTC) à l'aide du protocole Network Time Protocol (NTP).
+Le module `ntptime` en MicroPython permet de synchroniser l'horloge temps réel d'un microcontrôleur avec l'heure universelle coordonnée (UTC) à l'aide du protocole Network Time Protocol (NTP).<BR>
 
-Les fonctions principales disponibles dans ce module sont :
+Les fonctions principales disponibles dans ce module sont :<BR>
 
-`settime()` : Met à jour l'horloge temps réel du microcontrôleur en utilisant l'heure UTC récupérée à partir d'un serveur NTP.
-`time()` : Retourne l'heure UTC en secondes depuis l'époque Unix (1er janvier 1970).
-`host2ntp(host)` : Convertit une adresse IP ou un nom de domaine en une adresse NTP.
-`ntpc` : Objet de configuration pour le client NTP.
-`NTP_DELTA` : Constante pour compenser le décalage de temps.
-`NTP_PACKET_FORMAT` : Format de la trame de requête NTP.
+`settime()` : Met à jour l'horloge temps réel du microcontrôleur en utilisant l'heure UTC récupérée à partir d'un serveur NTP.<BR>
+`time()` : Retourne l'heure UTC en secondes depuis l'époque Unix (1er janvier 1970).<BR>
+`host2ntp(host)` : Convertit une adresse IP ou un nom de domaine en une adresse NTP.<BR>
+`ntpc` : Objet de configuration pour le client NTP.<BR>
+`NTP_DELTA` : Constante pour compenser le décalage de temps.<BR>
+`NTP_PACKET_FORMAT` : Format de la trame de requête NTP.<BR>
