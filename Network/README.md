@@ -2,38 +2,73 @@
 
 ## Introduction
 Dans le cadre du cours de Smartcities, il nous est demandé de réaliser plusieurs applications autour du Raspberry Pi Pico W, en utilisant le shield Grove founit avec.<BR>
-Pour la partie Network, plusieurs librairies sont utilisées et expliquées, tel que `network`, `urequests` et `ntptime`.
+Pour la partie Network, plusieurs librairies sont utilisées et expliquées, tel que `network`,`socket`, `urequests` et `ntptime`.
 
-Pour la partie SENSOR, l'affichage de la température et humidité, l'affichage de la valeur d'un microphone et de luminosité entre 0 et 65535, et la détection de mouvement via un capteur PIR sont présentés. 
   
-## Affichage de température et humidité
-Utilisation de la fonction `dht11.measure()`, `dht11.temperature()` et `dht11.humidity()` pour afficher la température et l'humidité dans le moniteur série.
+## Affichage de l'heure et de la température sur l'écran LCD
+Récupération de la date et l'heure à l'aide du module `ntptime`, et affichage de ces valeurs sur l'écran LCD. Récupération des données météos en temps réel à l'aide du module `urequest`et isolement de la température depuis le fichier JSON récupéré, et affichage de celle-ci sur l'écran LCD. 
+ 
 Code : [DHT11](https://github.com/hepl-leclercq/smartcities/blob/25dd11630cc4ba6d2fc0b74e16389c21efe1a084/Sensor/DHT11.py)
 
-## Affichage valeur d'un microphone entre 0 et 65535
-Utilisation de la fonction `read_u16()` de la classe ADC pour réaliser la conversion du signal analogique provenant du microphone, en une valeur binaire 12 bits, donc comprise entre 0 et 65535. Ensuite, affichage de cette valeur dans le moniteur série.<BR>
-Code : [Microphone](https://github.com/hepl-leclercq/smartcities/blob/d682f84a1e919442229988c2709c72d33f14307a/Sensor/Microphone.py)
 
 
-## Affichage valeur de luminosité entre 0 et 65535
-Utilisation de la fonction `read_u16()` de la classe ADC pour réaliser la conversion du signal analogique provenant du capteur de luminosité, en une valeur binaire 12 bits, donc comprise entre 0 et 65535. Ensuite, affichage de cette valeur dans le moniteur série.<BR>
-Code : [Luminosité](https://github.com/hepl-leclercq/smartcities/blob/1d4312304688b8958dbeec5996d4708257e0106e/Sensor/Microphone.py)
 
-## Affichage d'un message lorsque un obstacle est détecté
-Utilisation des fonctions du GPIO pour détecter un osctacle, et affichage d'un message dans le moniteur série.
-Les capteurs PIR sont des capteurs utilisés pour détecter les mouvements. Ils détectent les changements de température dans leur champ de vision.<BR>
-Code : [PIR](https://github.com/hepl-leclercq/smartcities/blob/86b89f94d8a6c2390578bca4f81dcb9ef8a69d90/Sensor/PIR.py)
+## Module `Network`
+Le module `Network` de MicroPython permet de gérer les connexions réseau sans fil et Ethernet sur des microcontrôleurs compatibles. Il met à disposition des classes et des fonctions pour la configuration et la gestion de connexions Wi-Fi et Ethernet.
 
+Les principales classes offertes par ce module sont :
 
-## Module `dht`
-Le module `dht` en Micropython est une bibliothèque qui permet de lire les données de température et d'humidité à partir du capteur DHT11 ou DHT22. Voici quelques-unes de ses fonctions principales :
+`WLAN`: permet de configurer et gérer les connexions Wi-Fi. <BR>
+`LAN`: permet de configurer et gérer les connexions Ethernet.<BR>
+`Server`: permet de créer un serveur HTTP ou FTP.<BR>
+  
+Les principales fonctions disponibles dans le module sont :
 
-`dht.DHT11(pin)` : Crée une instance du capteur DHT11 en utilisant le numéro de broche spécifié. 
+`WLAN.connect()`: permet de se connecter à un réseau Wi-Fi.<BR>
+`WLAN.disconnect()`: permet de se déconnecter d'un réseau Wi-Fi.<BR>
+`WLAN.isconnected()`: permet de vérifier si la connexion Wi-Fi est active.<BR>
+`LAN.active()`: permet d'activer ou de désactiver la connexion Ethernet.<BR>
+`LAN.ifconfig()`: permet de configurer l'adresse IP, le masque de sous-réseau et la passerelle par défaut pour une connexion Ethernet.<BR>
+  
+Le module `network` est très utile pour les projets IoT qui nécessitent une connexion réseau pour communiquer avec des serveurs ou des appareils distants
 
-`d.measure()` : Déclenche une mesure de température et d'humidité. Cette fonction doit être appelée avant de lire les données.
+## Module `Socket`
+Le module `socket` de MicroPython permet de communiquer avec différents protocoles réseau tels que TCP, UDP, SSL, etc. Il fournit une interface compatible avec la bibliothèque standard Python pour la gestion des sockets.
 
-`d.temperature()` : Renvoie la température en degrés Celsius sous forme de nombre à virgule flottante.
+Les fonctions disponibles dans ce module sont :<BR>
 
-`d.humidity()` : Renvoie l'humidité relative en pourcentage sous forme de nombre à virgule flottante. 
+`socket(family, type, proto=0)` : crée un nouveau socket avec une famille d'adresses et un type de socket spécifiés.<BR>
+`bind(address)` : associe le socket à une adresse.<BR>
+`listen(backlog)` : met le socket en mode écoute.<BR>
+`accept()` : accepte une connexion entrante.<BR>
+`connect(address)` : établit une connexion avec une adresse distante.<BR>
+`send(bytes)` : envoie des données à l'autre extrémité de la connexion.<BR>
+`recv(bufsize)` : reçoit des données depuis l'autre extrémité de la connexion.<BR>
+`setblocking(flag)` : configure le mode bloquant ou non bloquant du socket.<BR>
+`settimeout(value)` : définit le délai d'attente pour les opérations de socket.<BR>
+`close()` : ferme le socket.<BR>
+`getaddrinfo(host, port, family=0, type=0, proto=0, flags=0)` : résout une adresse de serveur et renvoie une liste de tuples contenant les informations d'adresse.<BR>
+`gethostname()` : renvoie le nom d'hôte local.<BR>
+`gethostbyname(hostname)` : renvoie l'adresse IP correspondant à un nom d'hôte donné.<BR>
+`gethostbyaddr(ip_address)` : renvoie le nom d'hôte correspondant à une adresse IP donnée.<BR>
+Le module socket est utile pour la communication avec d'autres appareils sur un réseau, en utilisant différentes méthodes de communication réseau.
+  
+## Module `urequests`
+Le module `urequests` de MicroPython permet de réaliser des requêtes HTTP basiques à partir de cartes de développement comme le Raspberry Pi Pico. Il s'appuie sur le module requests de Python et prend en charge les méthodes GET, POST, PUT et DELETE pour interagir avec des serveurs Web. Les principales fonctions disponibles dans le module urequests sont les suivantes :<BR>
 
-Il convient de noter que la fonction d.measure() peut prendre un certain temps pour effectuer la mesure, et il est recommandé d'attendre au moins 2 secondes entre les mesures successives pour éviter de surcharger le capteur.
+`urequests.get()` : envoie une requête GET à l'URL spécifiée et renvoie la réponse sous forme de texte.<BR>
+`urequests.post()` : envoie une requête POST à l'URL spécifiée avec les données fournies et renvoie la réponse sous forme de texte.<BR>
+`urequests.put()` : envoie une requête PUT à l'URL spécifiée avec les données fournies et renvoie la réponse sous forme de texte.<BR>
+`urequests.delete()` : envoie une requête DELETE à l'URL spécifiée et renvoie la réponse sous forme de texte.<BR>
+
+## Module `ntptime`
+Le module `ntptime` en MicroPython permet de synchroniser l'horloge temps réel d'un microcontrôleur avec l'heure universelle coordonnée (UTC) à l'aide du protocole Network Time Protocol (NTP).
+
+Les fonctions principales disponibles dans ce module sont :
+
+`settime()` : Met à jour l'horloge temps réel du microcontrôleur en utilisant l'heure UTC récupérée à partir d'un serveur NTP.
+`time()` : Retourne l'heure UTC en secondes depuis l'époque Unix (1er janvier 1970).
+`host2ntp(host)` : Convertit une adresse IP ou un nom de domaine en une adresse NTP.
+`ntpc` : Objet de configuration pour le client NTP.
+`NTP_DELTA` : Constante pour compenser le décalage de temps.
+`NTP_PACKET_FORMAT` : Format de la trame de requête NTP.
