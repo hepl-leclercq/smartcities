@@ -8,7 +8,7 @@ Pour la partie Network, plusieurs librairies sont utilisées et expliquées, tel
 ## Affichage de l'heure et de la température sur l'écran LCD
 Récupération de la date et l'heure à l'aide du module `ntptime`, et affichage de ces valeurs sur l'écran LCD. Récupération des données météos en temps réel à l'aide du module `urequest`et isolement de la température depuis le fichier JSON récupéré, et affichage de celle-ci sur l'écran LCD. 
  
-Code : [DHT11](https://github.com/hepl-leclercq/smartcities/blob/25dd11630cc4ba6d2fc0b74e16389c21efe1a084/Sensor/DHT11.py)
+Code : [Date_TempOnLCD](https://github.com/hepl-leclercq/smartcities/blob/cf75debafacb006d1cb1ba19c0fdee6739b37435/Network/Date_TempOnLCD.py)
 
 
 
