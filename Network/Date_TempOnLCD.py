@@ -46,14 +46,18 @@ def get_data(api, key):
         print(response.json())
         data = json.loads(response.content)
         global temperature
+        global Lieu
         temperature = data['main']['temp']
         print(f"Temperature: {temperature}°C")
+        Lieu = data['name']
+        print(f"Lieu: {Lieu}")
     else:
         print(f"Hello person, there's a {response.status_code} error with your request")
 
 # Fetching data for the first time
 get_data("https://api.openweathermap.org/data/2.5/weather", key)
 
+i = 1
 # Main loop to display time and temperature on LCD screen
 while(True):
     # Getting current time
@@ -72,7 +76,7 @@ while(True):
         LCDDate = day + "/" + month + "/" + year
         
         # Updating LCD display
-        d.clear()
+        d.clear() 
         d.setCursor(0, 0)
         d.print (LCDDate)
         d.setCursor(10, 0)
@@ -80,8 +84,14 @@ while(True):
         d.setCursor(0, 1)
         d.print (str(temperature))
         d.write(0b11011111)
+        d.setCursor(7, 1)
+        d.print ("> ")
+        d.print (Lieu)
     
     # Fetching new data every 10 minutes
-    if (int(minute)%10 == 0):
+    if (int(minute)%10 == 0 and i == 1):
         get_data("https://api.openweathermap.org/data/2.5/weather", key)
-        utime.sleep (59)
+        i = 0
+    
+    if (int(minute)%10 == 1 and i == 0):
+        i = 1 
